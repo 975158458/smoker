@@ -1,0 +1,14 @@
+<view class='top-panel'>
+  <text class='head-text'>{{text}}</text>
+</view>
+<image class='returnIcon' src='../../assert/icon/return.png' bindtap='last'></image>
+<image src="../../assert/icon/write-answer.png" mode='aspectFit' class='write-answer' bindtap='writeAnswerButton'></image>
+<text class='write-text' bindtap='writeAnswerButton'>写回答</text>
+<image src='../../assert/icon/answers.png' class='answer-to'></image>
+<text class='herui'>鹤瑞戒烟</text>
+<text class='huida'>戒烟不是说只靠的自己就可以的，因为戒烟是个很漫长的过程。\n如果在这个过程中只有自己，那样会很痛苦的，甚至会大大提高你戒的可能性。\n但是呢，很幸运的是，现在鹤瑞戒烟平台，他不仅可以监督约束和记录你的吸烟行为以及吸烟根数，还给你提高科学的戒烟模型以及一系列的相关课程！
+</text>
+<image class='img1' src="{{pathLove}}" bindtap='clickPinglun'></image>
+<image class='img2' src='../../assert/icon/pinglun.png'></image>
+<image class='img3' src='../../assert/icon/next.png'></image>
+<text class='pinglun'>写评论</text>

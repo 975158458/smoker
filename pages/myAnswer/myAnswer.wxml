@@ -1,0 +1,4 @@
+<view class="top-panel">
+  <text class='head-text'>暂无回答</text>
+  <image class='returnIcon' src='../../assert/icon/return.png' bindtap='last'></image>
+</view>

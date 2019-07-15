@@ -28,15 +28,15 @@
 
 <!--标签页-->
   <van-row custom-class="tab-block">
-      <van-tabs active="{{ 1 }}" bind:change="onTabChange" nav-class="right-nav" tab-class="tab-class" tab-active-class="tab-active-class">
-          <van-tab
-                  wx:for= "{{tab_titles}}"
-                  wx:key="index"
-                  title="{{ item }}"
-          >
-              <view class="content">
-                  {{ item + '的内容' }}
-              </view>
+      <van-tabs active="{{ 0 }}" bind:change="onTabChange" nav-class="right-nav" tab-class="tab-class" tab-active-class="tab-active-class" animated>
+          <van-tab title="Today">
+            <image src='../../assert/icon/day.png' style='width:100%; height:600rpx; margin-top:20rpx;' />
+          </van-tab>
+          <van-tab title="Week">
+            <image src='../../assert/icon/week.png' style='width:100%; height:600rpx;margin-top:20rpx;' />
+          </van-tab>
+          <van-tab title="Month">
+            <image src='../../assert/icon/month.png' style='width:100%; height:600rpx;margin-top:20rpx;' />
           </van-tab>
       </van-tabs>
   </van-row>

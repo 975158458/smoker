@@ -1,0 +1,23 @@
+/* pages/society/socity.wxss */
+.top-panel {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  height: 538rpx;
+  width: 100%;
+  background: linear-gradient(#55b3cf, #56e7a6);
+  border-bottom-right-radius: 17rpx;
+  border-bottom-left-radius: 14rpx;
+  box-shadow: 3rpx 3rpx 14rpx -5rpx;
+}
+
+.Search {
+  position: absolute;
+  width: 530rpx;
+  display: flex;
+  justify-content: center;
+  top: 255rpx;
+  left: 115rpx;
+}

@@ -22,22 +22,47 @@
       </van-col>
     </van-row>
   </van-row>
-</van-transition>
-
-<van-row custom-class="tab-block">
-  <van-tabs active="{{ 0 }}" bind:change="onTabChange" nav-class="right-nav" tab-class="tab-class" tab-active-class="tab-active-class" sticky animated swipeable>
-    <van-tab title="课程">
-      <scroll-view scroll-y>
-        <i-card i-class="card"  title="戒烟的危害" content="简介" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" >
-         <view slot="content">
-            <van-button custom-class="play-button" type="primary"  size="mini" round>PLAY</van-button>
-         </view>
+    <van-row custom-class="tab-block">
+    <van-tabs active="{{ 0 }}" bind:change="onTabChange" nav-class="right-nav" tab-class="tab-class" tab-active-class="tab-active-class" sticky animated swipeable >
+      <van-tab title="课程">
+        <i-card i-class="card"  title="吸烟的危害" content="简介" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" >
+          <view slot="content">
+              <van-button custom-class="play-button" type="primary"  size="mini" round>PLAY</van-button>
+          </view>
         </i-card>
-      </scroll-view>
-    </van-tab>
-    <van-tab title="历史">
-      <view class="content">
-      </view>
-    </van-tab>
-  </van-tabs>
-</van-row>
+        <i-card i-class="card"  title="戒烟的科学方法" content="简介" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" >
+          <view slot="content">
+              <van-button custom-class="play-button" type="primary"  size="mini" round>PLAY</van-button>
+          </view>
+        </i-card>
+      </van-tab>
+      <van-tab title="历史">
+        <i-card i-class="card"  title="戒烟的科学方法" content="简介" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" >
+          <view slot="content">
+              <van-button custom-class="play-button" type="primary"  size="mini" round>PLAY</van-button>
+          </view>
+        </i-card>
+      </van-tab>
+    </van-tabs>
+  </van-row>
+</van-transition>
+<!-- 
+<van-transition wx:if="{{transition}}" name="slide-down" duration="400">
+  <van-row custom-class="tab-block">
+    <van-tabs active="{{ 0 }}" bind:change="onTabChange" nav-class="right-nav" tab-class="tab-class" tab-active-class="tab-active-class" sticky animated swipeable line-width='0px'>
+      <van-tab title="课程">
+        <scroll-view scroll-y>
+          <i-card i-class="card"  title="戒烟的危害" content="简介" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg" >
+          <view slot="content">
+              <van-button custom-class="play-button" type="primary"  size="mini" round>PLAY</van-button>
+          </view>
+          </i-card>
+        </scroll-view>
+      </van-tab>
+      <van-tab title="历史">
+        <view class="content">
+        </view>
+      </van-tab>
+    </van-tabs>
+  </van-row>
+</van-transition> -->

@@ -1,0 +1,14 @@
+<view class="top-panel">
+  <text class='head-text'>已坚持5天</text>
+  <image class='returnIcon' src='../../assert/icon/return.png' bindtap='last'></image>
+  <i-card i-class="card"  title="第一天" extra="规划:10根 实际:10根" thumb="../../assert/icon/day.png" class="card1">
+  </i-card>
+  <i-card i-class="card"  title="第二天" extra="规划:10根 实际:9根" thumb="../../assert/icon/secondDay.png" class="card2">
+  </i-card>
+  <i-card i-class="card"  title="第三天" extra="规划:10根 实际:10根" thumb="../../assert/icon/threeDay.png" class="card3">
+  </i-card>
+  <i-card i-class="card"  title="第四天" extra="规划:10根 实际:8根" thumb="../../assert/icon/fourDay.png" class="card4">
+  </i-card>
+  <i-card i-class="card"  title="第五天" extra="规划:9根 实际:8根" thumb="../../assert/icon/fiveDay.png" class="card5">
+  </i-card>
+</view>

@@ -1,0 +1,27 @@
+<view class="top-panel">
+  <van-search
+      value="{{ value }}"
+      placeholder="请输入社区关键字"
+      use-action-slot
+      bind:search="onSearch"
+      class="Search"
+    >
+      <view slot="action" bind:tap="onSearch">搜索</view>
+  </van-search>
+  <image class='img1' src='../../assert/icon/group.png'></image>
+  <text class='make'>创建社区</text>
+  <image class='returnIcon' src='../../assert/icon/return.png' bindtap='last'></image>
+</view>
+
+<view>
+    <i-card i-class="card"  extra="广州戒烟群" thumb="../../assert/icon/jieyan.png">
+    </i-card>
+</view>
+<view>
+    <i-card i-class="card"  extra="深圳戒烟群" thumb="../../assert/icon/jy2.jpg">
+    </i-card>
+</view>
+<view>
+    <i-card i-class="card"  extra="佛山戒烟群" thumb="../../assert/icon/jy3.jpg">
+    </i-card>
+</view>

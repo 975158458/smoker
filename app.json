@@ -1,14 +1,21 @@
 {
   "pages": [
-      "pages/index/index",
-      "pages/courses/courses",
-    "pages/setting/setting"
+    "pages/index/index",
+    "pages/courses/courses",
+    "pages/setting/setting",
+    "pages/society/society",
+    "pages/answer/answer",
+    "pages/shequ/shequ",
+    "pages/myQuestion/myQuestion",
+    "pages/myPlan/myPlan",
+    "pages/myAnswer/myAnswer",
+    "pages/myTime/myTime"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#55b3cf",
     "navigationBarTitleText": "WeChat",
-    "navigationStyle":"custom",
+    "navigationStyle": "custom",
     "navigationBarTextStyle": "black"
   },
   "usingComponents": {
@@ -18,19 +25,30 @@
   },
   "tabBar": {
     "backgroundColor": "#32323c",
+    "color": "#e6e6e6",
+    "selectedColor": "#577399",
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "iconPath": "assert/icon/report.png",
-        "selectedIconPath": "assert/icon/report-select.png"
+        "pagePath": "pages/society/society",
+        "text": "提问",
+        "iconPath": "assert/icon/ques1.png",
+        "selectedIconPath": "assert/icon/ques2.png"
       },
       {
         "pagePath": "pages/courses/courses",
+        "text": "课程",
         "iconPath": "assert/icon/movie-fill.png",
         "selectedIconPath": "assert/icon/movie-line-selected.png"
       },
       {
+        "pagePath": "pages/index/index",
+        "text": "报告",
+        "iconPath": "assert/icon/report.png",
+        "selectedIconPath": "assert/icon/report2.png"
+      },
+      {
         "pagePath": "pages/setting/setting",
+        "text": "我的",
         "iconPath": "assert/icon/user-star-fill.png",
         "selectedIconPath": "assert/icon/user-star-fill-selected.png"
       }

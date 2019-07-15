@@ -1,7 +1,20 @@
 <van-transition wx:if="{{transition}}" name="slide-down" duration="400">
+  <view class='top-panel'>
+    <text class="user-name"> {{userInfo.nickName}} </text>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"/>
+  </view>
+  <van-icon name="gold-coin" size="55rpx" class="balance-icon" />
+  <text class="balance">余额</text>
+  <van-icon name="fire" size="30px" class="balance-icon2" />
+  <text class="balance2">进展</text>
+  
+  
+  
+  
+  
+  <!-->
   <van-row>
     <van-row custom-class="top-panel">
-      <!--头像位置-->
       <van-row class="info-block">
         <van-col>
           <text class="user-name"> {{userInfo.nickName}} </text>
@@ -12,7 +25,7 @@
 
       <van-row class="second-block">
         <van-cell border="{{false}}" custom-class="cell-left">
-          <van-icon slot="icon" name="gold-coin" size="20px" class="balance-icon" />
+          <van-icon slot="icon" name="gold-coin" size="40rpx" class="balance-icon" />
           <text slot="title" class="balance">余额</text>
         </van-cell>
 
@@ -23,32 +36,52 @@
       </van-row>
     </van-row>
   </van-row>
+  <-->
+
+
 </van-transition>
 
-<view style="padding-top:10px"/>
-<van-cell title="我的朋友"
-border=false
-center=true
-size="large"
-icon="friends"
- custom-class="setting-cell" />
-<van-cell title="我的回答" 
-icon="question"
-size="large"
-border=false
-custom-class="setting-cell" />
-<van-cell title="我的提问" 
-icon="award"
-border=false
-size="large"
-custom-class="setting-cell"/>
-<van-cell title="我的模型" 
-icon="manager"
-border=false
-size="large"
-custom-class="setting-cell"/>
-<van-cell title="时光脚步" 
-icon="manager"
-border=false
-size="large"
-custom-class="setting-cell"/>
+<van-transition wx:if="{{transition}}" name="slide-left" duration="400">
+  <view style="padding-top:10px"/>
+  <van-cell title="戒烟社区"
+  border=false
+  center=true
+  size="large"
+  icon="friends"
+  custom-class="setting-cell" is-link url="../shequ/shequ" link-type="navigateTo"/>
+ </van-transition>
+ <van-transition wx:if="{{transition}}" name="slide-right" duration="400">
+  <van-cell title="我的提问" 
+  icon="award"
+  border=false
+  size="large"
+  custom-class="setting-cell" is-link url="../myQuestion/myQuestion" link-type="navigateTo"/>
+</van-transition>
+ <van-transition wx:if="{{transition}}" name="slide-left" duration="400">
+  <van-cell title="我的回答" 
+  icon="question"
+  size="large"
+  border=false
+  custom-class="setting-cell" is-link url="../myAnswer/myAnswer" link-type="navigateTo"/>
+ </van-transition>
+<van-transition wx:if="{{transition}}" name="slide-right" duration="400">
+  <van-cell title="戒烟规划" 
+  icon="manager"
+  border=false
+  size="large"
+  custom-class="setting-cell" is-link url="../myPlan/myPlan" link-type="navigateTo"/>
+</van-transition>
+<van-transition wx:if="{{transition}}" name="slide-right" duration="400">
+  <van-cell title="时光脚步" 
+  icon="underway"
+  border=false
+  size="large"
+  custom-class="setting-cell" is-link url="../myTime/myTime" link-type="navigateTo"/>
+</van-transition>
+<van-transition wx:if="{{transition}}" name="slide-up" duration="400">
+  <van-cell title="心理咨询" 
+  icon="underway"
+  border=false
+  size="large"
+  custom-class="setting-cell" is-link link-type="navigateTo"/>
+</van-transition>

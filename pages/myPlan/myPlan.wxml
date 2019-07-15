@@ -1,0 +1,7 @@
+<view class="top-panel">
+  <text class='head-text'>我的规划</text>
+  <image class='returnIcon' src='../../assert/icon/return.png' bindtap='last'></image>
+</view>
+<view>
+  <text class='text'>暂无规划</text>
+</view>

@@ -1,0 +1,26 @@
+<!--pages/society/socity.wxml-->
+<van-transition wx:if="{{transition}}" name="slide-down" duration="{{400}}">
+  <view class="top-panel">
+    <van-search
+      value="{{ value }}"
+      placeholder="请输入搜索内容"
+      use-action-slot
+      bind:search="onSearch"
+      class="Search"
+    >
+      <view slot="action" bind:tap="onSearch">搜索</view>
+    </van-search>
+  </view>
+  <view bindtap="onclick1">
+    <i-card i-class="card"  extra="请问各位是如何成功戒烟的，可以分享一下吗？" thumb="../../assert/icon/girl1.png">
+    </i-card>
+  </view>
+  <view bindtap="onclick2">
+    <i-card i-class="card"  extra="各位兄弟可以分享一下失败的原因吗？" thumb="../../assert/icon/girl2.png">
+    </i-card>
+  </view>
+  <view bindtap="onclick3">
+    <i-card i-class="card"  extra="你是从什么时候开始决定要戒烟的？" thumb="../../assert/icon/girl3.png">
+    </i-card>
+  </view>
+</van-transition>
